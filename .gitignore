@@ -109,6 +109,8 @@ dist
 
 .DS_Store
 
+expressdb
+
 # Lock files
 yarn.lock
 package-lock.json

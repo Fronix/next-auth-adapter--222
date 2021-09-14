@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "transform-runtime": {
+          "useESModules": false
+        },
+        "preset-env": {
+          "targets": {
+              "browsers": [">0.03%"]
+          },
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      },
+      "@babel/preset-typescript"
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+  ]
+}

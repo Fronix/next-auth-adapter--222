@@ -26,14 +26,19 @@
     "semi": false
   },
   "dependencies": {
+    "core-js": "^3.17.3",
+    "mssql": "^7.2.1",
     "next": "^11.0.0",
     "next-auth": "4.0.0-beta.2",
     "nodemailer": "^6.6.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.37"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.15.4",
+    "@babel/preset-typescript": "^7.15.0",
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",

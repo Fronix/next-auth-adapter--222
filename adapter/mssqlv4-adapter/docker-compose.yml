@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  sqlserver:
+    container_name: sqlserver
+    image: mcr.microsoft.com/mssql/server
+    command: /bin/bash ./entrypoint.sh
+    ports:
+      - "1434:1433"
+    environment:
+      SA_PASSWORD: "C#CG#yKo8j@D3t&"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    volumes:
+      - "./expressdb:/var/opt/mssql/data"
+      - ./db/docker-entrypoint.sh:/entrypoint.sh
+      - ./db/db-init.sh:/db-init.sh
+      - ./db/db-init.sql:/db-init.sql
